@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <form id="search-form">
+                <input type="submit" value="🔎" class="btn btn-lg btn-primary" />
+                <input type="search" placeholder="Type a city" class="btn btn-light" id="city-input" />
+                <button class="btn-success" id="current-location-button">
+                    Local
+                </button>
+            </form>
+            <div class="row">
+                <div class="col">
+                    <ul class="move">
+                        <li id="city"></li>
+                        <li>
+                            🌡
+                        </li>
+                        <li id="date"></li>
+                        <li id="description"></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="move-left">
+                        <li><span id="temperature"></span>°C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    TUE ⛅ 6°C
+                </div>
+                <div class="col">
+                    WED ☁ 5°C
+                </div>
+                <div class="col">
+                    THU ☁ 4°C
+                </div>
+                <div class="col">
+                    FRI ☁ 3°C
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
