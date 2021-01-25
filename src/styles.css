@@ -21,7 +21,8 @@ li {
 .search {
   font: fff;
 }
-h1 {
+.headline {
   display: block;
   margin: 0 auto;
+  color: blueviolet;
 }
