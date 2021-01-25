@@ -22,7 +22,7 @@ li {
   font: fff;
 }
 .headline {
-  display: block;
+  text-align: center;
   margin: 0 auto;
-  color: blueviolet;
+  color: darkgray;
 }
