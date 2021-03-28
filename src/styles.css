@@ -26,3 +26,8 @@ li {
   margin: 0 auto;
   color: darkgray;
 }
+p {
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(51, 43, 43);
+}
