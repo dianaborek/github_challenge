@@ -11,13 +11,13 @@ function getCurrentLocation(event) {
 }
 
 function displayWeather(response) {
-  console.log(response.data.name);
+  let iconElement = document.querySelector("#icon"); 
+  iconElement.setAttribute("src", 'http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png');
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.main.temp);
+    console.log(response.data.weather.icon);
+  
 }
 
 function search(event) {
